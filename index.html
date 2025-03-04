@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Powder Packaging Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Milk Powder Packaging Cost Calculator</h1>
+        
+        <div class="form-group">
+            <label for="customer-name">Customer Name:</label>
+            <input type="text" id="customer-name" placeholder="Enter Customer Name">
+        </div>
+
+        <div class="form-group">
+            <label for="package-size">Select Size (gms):</label>
+            <select id="package-size">
+                <option value="20">20g</option>
+                <option value="25">25g</option>
+                <option value="150">150g</option>
+                <option value="400">400g</option>
+                <option value="900">900g</option>
+            </select>
+        </div>
+
+        <button onclick="calculateCost()">Calculate</button>
+
+        <h2>Results</h2>
+        <div id="result-box"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
